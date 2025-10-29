@@ -17,7 +17,7 @@ test.describe('Login', () => {
   });
 
 
-  test.only('[@smoke] invalid user sees an error', async ({ page }) => {
+  test.only('[@regression] invalid user sees an error', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.open();
     await loginPage.login(users.invalid.username, users.invalid.password);
